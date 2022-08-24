@@ -472,7 +472,7 @@ end
 
 local function CheckMacro(macro)
 for i = 1, #macro - 1 do
-if not UserInputService:IsKeyDown(macro[i]) then
+if not UserInputService:IsKeyDown(macro[i]) or getgenv().freeCamera == false then
 return
 end
 end
