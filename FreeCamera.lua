@@ -464,7 +464,7 @@ local enabled = false
 local function ToggleFreecam()
 if enabled then
 StopFreecam()
-elseif getgenv().freeCamera == true then
+else
 StartFreecam()
 end
 enabled = not enabled
